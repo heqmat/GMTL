@@ -47,6 +47,9 @@ Multilines are good. Multilines are good.
 ```
 For the string interpolation part, replaced data should be `$varname$`, so it should not include $ symbols in any way and it should not have new lines, but it can have spaces though. 
 
+## Example usage
+`python3.12 .\gmtl_processor.py -i inputfile.txt -o outputfile.txt`
+
 ## Parameterized Macros
 GMTL currently doesn't support parameterized macros due to security concerns like "execution of malicious codes inside passive notation or markup languages such as JSON, HTML". But this might be considered and updated in the future.
 
