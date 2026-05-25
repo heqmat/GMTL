@@ -50,6 +50,25 @@ For the string interpolation part, replaced data should be `$varname$`, so it sh
 ## Example usage
 `python3.12 .\gmtl_processor.py -i inputfile.txt -o outputfile.txt`
 
+**Input File:**
+```python
+<%GMTL
+VERSION = "v1.2.0";
+THEME_COLOR = "#ff5500";
+%>
+{
+  "meta": { "version": "$VERSION$" },
+  "styles": { "primary": "$THEME_COLOR$" }
+}
+```
+**Output File:**
+```python
+{
+  "meta": { "version": "v1.2.0" },
+  "styles": { "primary": "#ff5500" }
+}
+```
+
 ## Parameterized Macros
 GMTL currently doesn't support parameterized macros due to security concerns like "execution of malicious codes inside passive notation or markup languages such as JSON, HTML". But this might be considered and updated in the future.
 
