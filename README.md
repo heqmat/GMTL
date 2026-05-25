@@ -1,6 +1,6 @@
 # GMTL(Generic Macro Template Language)
 
-GMTL is completely generic one-file human-readable configuration layer language to modify any kinds of machine data with parameterless macros. 
+GMTL is completely generic one-file human-readable configuration layer language to modify any kinds of machine data with parameterless macros thanks to its "extreme agnostic" nature. 
 The goal of GMTL isn't to invent a new way to swap text, but to provide a self-contained 'dashboard' at the top of complex data files so humans can safely modify them without breaking the underlying syntax.
 
 ## Structure of GMTL:
